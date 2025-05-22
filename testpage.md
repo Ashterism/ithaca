@@ -2,6 +2,8 @@
 layout: default
 title: Ithaca | From Strategy to Impact
 description: Practical sustainability and digital strategy, delivered with clarity and purpose.
+permalink: /test/
+
 ---
 
 <section id="hero" class="hero-banner">
@@ -20,7 +22,7 @@ description: Practical sustainability and digital strategy, delivered with clari
       <p>Because success — in either domain — comes down to the same thing: Clarity, context, and creating something that works.</p>
     </div>
     <div class="image">
-      <img src="/assets/images/about.jpg" alt="About Ithaca">
+      <img src="/assets/images/about.png" alt="About Ithaca">
     </div>
   </div>
 </section>
