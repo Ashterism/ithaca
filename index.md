@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ithaca | From Strategy to Impact
+title: Strategy to Impact
 description: Practical sustainability and digital strategy, delivered with clarity and purpose.
 ---
 
@@ -56,7 +56,7 @@ description: Practical sustainability and digital strategy, delivered with clari
   <p>We’ve delivered sustainability and digital at some of the world’s biggest events, including in the UAE. For full event-specific services (incl. ISO20121, carbon footprinting, and stakeholder planning), get in touch.</p>
 </section>
 
-<section id="why" class="highlighted">
+<section id="why" class="highlighted block">
   <div class="section-flex">
     <div class="text">
       <h2>Why Ithaca?</h2>
@@ -72,7 +72,7 @@ description: Practical sustainability and digital strategy, delivered with clari
       <p>We believe that sustainability should be practical and progress-focused — not just a reporting exercise. And that digital can create real, meaningful connections. We bring strategy, systems thinking, and human insight together to deliver change that sticks.</p>
     </div>
     <div class="image">
-      <img src="/assets/images/placeholder-impact.jpg" alt="Impact Visual">
+      <img src="/assets/images/whyithaca.png" alt="Why Ithaca visual" class="content-img img-medium img-bordered">
     </div>
   </div>
 </section>

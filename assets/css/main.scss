@@ -3,6 +3,9 @@
 
 @import 'variables';
 
+/* -------------------------------------------------- */
+/* Typography & Base Layout */
+/* -------------------------------------------------- */
 body {
   font-family: $font-body;
   background: $color-light;
@@ -23,6 +26,9 @@ ul li {
   margin-bottom: 0.75rem;
 }
 
+/* -------------------------------------------------- */
+/* Header & Navigation */
+/* -------------------------------------------------- */
 header {
   position: sticky;
   top: 0;
@@ -36,7 +42,7 @@ header {
   width: 100%;
 
   .nav-wrapper {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
@@ -63,14 +69,17 @@ header {
     line-height: 1;
     display: flex;
     align-items: center;
-    height: 100%;
+    padding: 0.25rem 0;
   }
 }
-
 
 .nav-logo {
   height: 64px; /* doubled from 32px */
 }
+
+/* -------------------------------------------------- */
+/* Images */
+/* -------------------------------------------------- */
 
 .section-image {
   width: 100%;
@@ -80,6 +89,66 @@ header {
   border-radius: 8px;
 }
 
+/* -------------------------------------------------- */
+/* Image Utilities */
+/* -------------------------------------------------- */
+
+/* Base class for all inline images */
+img.content-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Alignment */
+.img-left {
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.img-right {
+  float: right;
+  margin-left: 1.5rem;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Block-level image */
+.img-block {
+  display: block;
+  max-width: 100%;
+  width: auto; 
+  clear: both;
+  margin: 2rem 0;
+}
+
+/* Optional hairline border */
+.img-bordered {
+  border: 1px solid $color-orange;
+}
+
+/* Size presets */
+img.content-img.img-small {
+  max-width: 200px;
+}
+
+img.content-img.img-medium {
+  max-width: 400px;
+}
+
+img.content-img.img-large {
+  max-width: 800px;
+}
+
+/* -------------------------------------------------- */
+/* Sections */
+/* -------------------------------------------------- */
 section {
   padding: 4rem 2rem;
   max-width: 1100px;
@@ -90,6 +159,16 @@ section.highlighted {
   background-color: #f7f6f3;
 }
 
+section.block {
+  display: block;
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------- */
+/* Footer */
+/* -------------------------------------------------- */
 footer {
   background: $color-dark;
   color: $color-light;
@@ -100,4 +179,25 @@ footer {
     color: $color-orange;
     text-decoration: none;
   }
+}
+/* -------------------------------------------------- */
+/* Section Flex Layout for Block Sections */
+/* -------------------------------------------------- */
+
+.section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.section-flex .text {
+  flex: 1 1 60%;
+}
+
+.section-flex .image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
