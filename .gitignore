@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Node modules (if using postcss, tailwind etc.)
+node_modules/
+
+# Jekyll cache
+_site/
+.jekyll-cache/
+
+# Ruby stuff (if used)
+*.gem
+.bundle/
+vendor/
+
+# VS Code
+.vscode/
+
+# System files
+Thumbs.db

@@ -1,0 +1,13 @@
+title: Ithaca
+description: From Strategy to Impact
+baseurl: "" # Leave empty unless you're using a subpath
+url: ""      # Update with your domain once you have one
+permalink: pretty
+
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
