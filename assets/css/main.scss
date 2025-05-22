@@ -37,7 +37,7 @@ header {
 }
 
 .sticky-nav {
-  background-color: $color-light;
+  background-color: $color-offwhite;
   border-bottom: 3px solid $color-orange;
   width: 100%;
 
@@ -186,18 +186,88 @@ footer {
 
 .section-flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2rem;
   align-items: flex-start;
 }
 
 .section-flex .text {
   flex: 1 1 60%;
+  min-width: 0;
 }
 
-.section-flex .image {
+
+/* -------------------------------------------------- */
+/* Section Types */
+/* -------------------------------------------------- */
+
+/* Hero Section */
+.section-hero {
+  background: $color-light;
+  padding: 6rem 2rem;
+  text-align: center;
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/* Text Only Section */
+.section-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.section-contact {
+  text-align: center;
+}
+
+/* Image + Text Split: Right */
+.section-split-right .section-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.section-split-right .text {
+  flex: 1 1 60%;
+}
+
+.section-split-right .image {
+  flex: 1 1 40%;
+  display: block;
+  text-align: right;
+}
+
+/* Image + Text Split: Left (same as right but reversed) */
+.section-split-left .section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.section-split-left .text {
+  flex: 1 1 60%;
+}
+
+.section-split-left .image {
   flex: 1 1 40%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
 }
