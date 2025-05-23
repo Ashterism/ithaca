@@ -5,9 +5,15 @@ description: Practical sustainability and digital strategy, delivered with clari
 ---
 
 <section id="hero" class="section-hero">
-  <div class="hero-content">
-    <h1>From Strategy to Impact</h1>
-    <p>Practical sustainability and digital delivery for organisations that care about making things work.</p>
+  <div class="hero-video-wrapper">
+    <video autoplay loop muted playsinline class="hero-video">
+      <source src="/assets/videos/hero-banner2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>From Strategy to Impact</h1>
+      <p>Practical sustainability and digital delivery for organisations that care about making things work.</p>
+    </div>
   </div>
 </section>
 
@@ -109,8 +115,21 @@ description: Practical sustainability and digital strategy, delivered with clari
 </section>
 
 <section id="contact" class="section-contact highlighted">
-  <h2>Contact</h2>
-  <p><a href="https://www.linkedin.com/in/ashbladon/" target="_blank">Connect on LinkedIn</a></p>
+  <div class="section-title">
+    <h2>Get in touch</h2>
+  </div>
+  <div class="contact-content">
+    <p>
+      <a href="https://www.linkedin.com/in/ashbladon/" target="_blank">Connect on LinkedIn</a>
+      <span class="contact-blurb">or get in touch with us via email:</span>
+    </p>
+    <form action="https://formspree.io/f/xanozvan" method="POST" class="contact-form">
+      <label for="contact-email">Your email:</label>
+      <input type="email" id="contact-email" name="email" required>
+      <label for="contact-message">Your message:</label>
+      <textarea id="contact-message" name="message" required></textarea>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </section>
-
-{% include footer.html %}

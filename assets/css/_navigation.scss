@@ -1,6 +1,6 @@
 // _navigation.scss
 
-/* --- NEW / UPDATED VARIABLES FOR MINIMA STYLING --- */
+/* --- Variables --- */
 // These variables are specific to the mobile navigation styling.
 // If you have a central _variables.scss, you might prefer to define them there.
 $border-color-01: #e8e8e8; // Light gray, similar to Minima's border
@@ -11,7 +11,7 @@ $base-font-size: 16px; // Minima's typical base font size (for calculations)
 $background-color: $color-light; // Alias for Minima's background, using your $color-light
 
 /* -------------------------------------------------- */
-/* Header & Navigation */
+/* Header & Navigation Base Styles */
 /* -------------------------------------------------- */
 
 header {
@@ -29,28 +29,36 @@ header {
   .nav-wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: $spacing-unit calc($spacing-unit * 2); // Using spacing-unit
+    padding: $spacing-unit calc($spacing-unit * 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative; // Essential for positioning mobile menu elements
   }
 
-  // Desktop Navigation - now specifically targeting .nav-items
-  .nav-items { // This now applies to the UL for desktop
+  .nav-logo {
+    height: 64px;
+    border-radius: 8px;
+  }
+}
+
+/* -------------------------------------------------- */
+/* Desktop Navigation */
+/* -------------------------------------------------- */
+@media (min-width: 801px) {
+  .sticky-nav .nav-items {
     display: flex;
     gap: calc($spacing-unit * 2);
     list-style: none;
     margin: 0;
     padding: 0;
-    float: right; // Minima's desktop nav floats right
+    float: right;
   }
-  .nav-items li { // Nested for desktop li
+  .sticky-nav .nav-items li {
     display: flex;
     align-items: center;
   }
-
-  .nav-item { // Nested for desktop a
+  .sticky-nav .nav-item {
     text-decoration: none;
     font-weight: bold;
     color: $color-dark;
@@ -60,29 +68,25 @@ header {
     height: 100%;
     padding: 0.5rem 0;
   }
-
-  /* Hide Minima's checkbox and label on desktop */
+  /* Hide mobile nav elements on desktop */
   .nav-trigger,
   label[for="nav-trigger"],
-  .mobile-nav-group { // Hide the mobile group on desktop
-    display: none;
+  .mobile-nav-group {
+    display: none !important;
   }
 }
 
-
-.nav-logo {
-  height: 64px;
-  border-radius: 8px; // Added for consistency with the Canvas
-}
-
-// Media query for screens up to 800px width
+/* -------------------------------------------------- */
+/* Mobile Navigation */
+/* -------------------------------------------------- */
 @media (max-width: 800px) {
   .sticky-nav .nav-wrapper {
-    padding-right: calc($spacing-unit * 0.6); // Minima's right spacing for icon
+    // padding-right: calc($spacing-unit * 0.6); // Already handled by .mobile-nav-group positioning
+    // position: relative; // Already on parent .sticky-nav .nav-wrapper
   }
 
   // Desktop navigation links are hidden on mobile
-  .sticky-nav .nav-items {
+  .sticky-nav .nav-items { // This targets the desktop nav-items and hides them
     display: none;
   }
 
@@ -140,7 +144,8 @@ header {
 
   // When the hidden checkbox is checked (menu open)
   #nav-trigger:checked ~ label[for="nav-trigger"]::before {
-    content: "\f00d";
+    content: "\f00d"; // Change to 'X' icon
+    font-size: 1.5em; // Slightly larger 'X'
   }
 
   // When the hidden checkbox is checked, expand the mobile-nav-group
@@ -184,6 +189,7 @@ header {
   // Mobile Navigation Links (the "labels")
   .mobile-nav-group .nav-item {
     display: block; // Crucial: Make <a> a block element
+    text-decoration: none; // Remove underline
     box-sizing: border-box;
     white-space: nowrap;
     
