@@ -1,0 +1,204 @@
+// _navigation.scss
+
+/* --- NEW / UPDATED VARIABLES FOR MINIMA STYLING --- */
+// These variables are specific to the mobile navigation styling.
+// If you have a central _variables.scss, you might prefer to define them there.
+$border-color-01: #e8e8e8; // Light gray, similar to Minima's border
+$border-color-03: #cccccc; // Slightly darker gray for icon
+$spacing-unit: 1rem; // Base spacing unit (16px)
+$base-line-height: 1.6; // Minima's typical base line height (for text centering)
+$base-font-size: 16px; // Minima's typical base font size (for calculations)
+$background-color: $color-light; // Alias for Minima's background, using your $color-light
+
+/* -------------------------------------------------- */
+/* Header & Navigation */
+/* -------------------------------------------------- */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.sticky-nav {
+  background-color: $color-light;
+  border-bottom: 3px solid $color-orange;
+  width: 100%;
+
+  .nav-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: $spacing-unit calc($spacing-unit * 2); // Using spacing-unit
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; // Essential for positioning mobile menu elements
+  }
+
+  // Desktop Navigation - now specifically targeting .nav-items
+  .nav-items { // This now applies to the UL for desktop
+    display: flex;
+    gap: calc($spacing-unit * 2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right; // Minima's desktop nav floats right
+  }
+  .nav-items li { // Nested for desktop li
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item { // Nested for desktop a
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-dark;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem 0;
+  }
+
+  /* Hide Minima's checkbox and label on desktop */
+  .nav-trigger,
+  label[for="nav-trigger"],
+  .mobile-nav-group { // Hide the mobile group on desktop
+    display: none;
+  }
+}
+
+
+.nav-logo {
+  height: 64px;
+  border-radius: 8px; // Added for consistency with the Canvas
+}
+
+// Media query for screens up to 800px width
+@media (max-width: 800px) {
+  .sticky-nav .nav-wrapper {
+    padding-right: calc($spacing-unit * 0.6); // Minima's right spacing for icon
+  }
+
+  // Desktop navigation links are hidden on mobile
+  .sticky-nav .nav-items {
+    display: none;
+  }
+
+  // Mobile Nav Group (Minima's equivalent of .site-nav on mobile)
+  // This is the actual "card" that contains the icon AND the links
+  .mobile-nav-group {
+    display: block; // Show the container on mobile
+    position: absolute;
+    top: 9px; // Minima's exact top positioning relative to nav-wrapper
+    right: calc($spacing-unit * 0.6); // Minima's exact right positioning
+    text-align: right; // Aligns content within the card to the right
+
+    // Initial state: collapsed to icon size, no background/border/shadow
+    width: 36px; // Match icon width
+    height: 36px; // Match icon height
+    max-height: 36px; // Ensure it stays collapsed
+    overflow: hidden;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0;
+    box-shadow: none;
+
+    transition: max-height 0.3s ease-out, box-shadow 0.3s ease-out,
+                width 0.3s ease-out, height 0.3s ease-out,
+                background-color 0.3s ease-out, border-color 0.3s ease-out, border-width 0.3s ease-out, border-radius 0.3s ease-out;
+    z-index: 998; // Keep it below the header but above content
+  }
+
+  // Minima's hidden checkbox
+  .nav-trigger {
+    display: none; // Always hidden
+  }
+
+  // Minima's mobile menu icon (the clickable label)
+  label[for="nav-trigger"] {
+    display: block; // Show the label on mobile
+    float: right; // Minima's float for the icon
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 0; // Reset line height for precise icon positioning
+    padding-top: 18px; // Minima's exact padding-top for icon centering
+    color: $border-color-03; // Minima's icon color
+    // No border/background here, as it's on the parent .mobile-nav-group
+    transition: all 0.2s ease-in-out;
+  }
+
+  label[for="nav-trigger"]::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0c9"; // Hamburger icon
+    font-size: 1.25em;
+  }
+
+  // When the hidden checkbox is checked (menu open)
+  #nav-trigger:checked ~ label[for="nav-trigger"]::before {
+    content: "\f00d";
+  }
+
+  // When the hidden checkbox is checked, expand the mobile-nav-group
+  #nav-trigger:checked ~ .mobile-nav-group {
+    max-height: 300px; // Expand to show menu items (adjust as needed)
+    width: max-content; // Make width adjust to content
+    min-width: 150px; // Ensure a minimum width
+    max-width: 80vw; // Prevent from being too wide on larger mobile screens
+    height: auto; // Allow height to adjust to content
+    background-color: $background-color; // Apply background
+    border: 1px solid $border-color-01; // Apply border
+    border-radius: 5px; // Apply border-radius
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15); // Full shadow when open
+  }
+
+  // The actual list of nav items within the mobile-nav-group
+  .mobile-nav-group .nav-items {
+    clear: both; // Clear the float of the label
+    display: block; // Show the ul when its parent group is expanded
+    list-style: none;
+    margin: 0;
+    padding-bottom: 5px; // Minima's padding at the bottom of the open menu
+  }
+
+  .mobile-nav-group .nav-items li {
+    display: block; // Stack items vertically
+    padding: 0;
+    border-bottom: 1px solid $border-color-01; // Minima-like separator
+    margin-bottom: 0;
+  }
+
+  .mobile-nav-group .nav-items li:first-child {
+    padding-top: 0;
+  }
+
+  .mobile-nav-group .nav-items li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  // Mobile Navigation Links (the "labels")
+  .mobile-nav-group .nav-item {
+    display: block; // Crucial: Make <a> a block element
+    box-sizing: border-box;
+    white-space: nowrap;
+    
+    // Minima's exact vertical centering via padding and line-height
+    padding: 5px 10px; // Vertical and horizontal padding directly on the <a>
+    line-height: $base-line-height; // Use base line height for vertical centering
+    
+    color: $color-dark;
+    transition: background-color 0.2s ease;
+
+    // Minima's margin for open menu items - this creates the left indentation
+    margin-left: 20px; 
+  }
+
+  .mobile-nav-group .nav-item:hover {
+    background-color: #f0f0f0;
+  }
+}

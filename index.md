@@ -11,26 +11,26 @@ description: Practical sustainability and digital strategy, delivered with clari
   </div>
 </section>
 
-<section id="about" class="section-split-right">
+<section id="about" class="section">
+  <div class="section-title">
+    <h2>About Ithaca</h2>
+  </div>
   <div class="section-flex">
     <div class="text">
-      <h2>About Ithaca</h2>
       <p>At Ithaca, we offer two core services: <strong>Sustainability</strong> and <strong>Digital Delivery</strong>. They’re distinct in content — but <strong>connected by approach</strong>. Both are rooted in <strong>systems thinking</strong>, real-world requirements, and continuous improvement.</p>
       <p>Whether we’re shaping a climate strategy or building a digital solution, we start by understanding what’s actually needed — not what’s assumed. Then we iterate, improve, and deliver — always engaging the people that matter most.</p>
       <p>Because success — in either domain — comes down to the same thing: <strong>clarity, context, and creating something that works</strong>.</p>
     </div>
-    <div class="image">
-      <img src="/assets/images/about.jpg" alt="About Ithaca">
-    </div>
+
   </div>
 </section>
 
-<section id="services" class="section-split-left highlighted">
+<section id="services" class="section-split-right highlighted">
+  <div class="section-title">
+    <h2>What We Offer</h2>
+  </div>
   <div class="section-flex">
     <div class="text">
-      <h2>What We Offer</h2>
-      <img src="/assets/images/whatweoffer.png" alt="What We Offer visual" class="content-img img-medium img-bordered" />
-      <img src="/assets/images/placeholder-services.jpg" alt="Services Visual" class="section-image">
       <h3>Sustainability & Carbon Strategy</h3>
       <ul>
         <li>Strategy design aligned to ISO14001, ISO20121, PAS2060, ISO14068, CSRD</li>
@@ -53,22 +53,29 @@ description: Practical sustainability and digital strategy, delivered with clari
         <li>Focused on clarity, context, and creating things that work</li>
       </ul>
     </div>
+    <div class="image">
+      <img src="/assets/images/whatweoffer.png" alt="What We Offer visual" class="content-img img-medium img-bordered" />
+    </div>
   </div>
 </section>
 
 <section id="event-expertise" class="section-split-right with-background">
+  <div class="section-title">
+    <h2>Event Expertise</h2>
+  </div>
   <div class="section-flex">
     <div class="text">
-      <h2>Event Expertise</h2>
       <p>We’ve delivered sustainability and digital at some of the world’s biggest events, including in the UAE. For full event-specific services (incl. ISO20121, carbon footprinting, and stakeholder planning), get in touch.</p>
     </div>
   </div>
 </section>
 
 <section id="why" class="section-split-right highlighted">
+  <div class="section-title">
+     <h2>Why Ithaca?</h2>
+  </div>
   <div class="section-flex">
     <div class="text">
-      <h2>Why Ithaca?</h2>
       <h3>Demonstrable Delivery</h3>
       <ul>
         <li>End-to-end sustainability strategy for an 85,000-person global event in the UAE</li>
@@ -88,8 +95,10 @@ description: Practical sustainability and digital strategy, delivered with clari
 
 <section id="how" class="section-split-left">
   <div class="section-flex">
-    <div class="text">
+  <div class="section-title">
       <h2>How We Work</h2>
+  </div>
+    <div class="text">
       <ul>
         <li><strong>Clarity. Candour. Partnership.</strong> We cut through the noise. Our work is built on honest conversations and practical steps.</li>
         <li>You work directly with an experienced consultant — no handoffs, no fluff. Just clear thinking and real progress.</li>
