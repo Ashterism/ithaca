@@ -7,7 +7,7 @@ description: Practical sustainability and digital strategy, delivered with clari
 <section id="hero" class="section-hero">
   <div class="hero-video-wrapper">
     <video autoplay loop muted playsinline class="hero-video">
-      <source src="/assets/videos/hero-banner2.mp4" type="video/mp4">
+      <source src="/assets/videos/hero-banner.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="hero-content">
