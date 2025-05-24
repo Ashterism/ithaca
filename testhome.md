@@ -2,6 +2,7 @@
 layout: default
 title: Strategy to Impact
 description: Practical sustainability and digital strategy, delivered with clarity and purpose.
+permalink: /testhome/
 ---
 
 <section id="hero" class="section-hero">
