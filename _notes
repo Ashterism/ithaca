@@ -1,3 +1,7 @@
+
+Minimising Video File Size with FFmpeg (mac terminal)
+=====================================================
+
 ffmpeg -i untitled.mov -ss 00:00:01 -t 2.0 -vf "scale=1280:-2" -c:v libx264 -crf 28 -preset veryfast -an hero-desert-sml.mp4
 
 Flag / Meaning
@@ -11,3 +15,5 @@ ffmpeg = Starts the FFmpeg tool
 -preset veryfast = Encoding speed/efficiency tradeoff (faster = larger file)
 -an = Strip audio from the output file
 hero-desert-sml.mp4 = Output file name
+
+
