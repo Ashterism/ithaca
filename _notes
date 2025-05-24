@@ -1,0 +1,13 @@
+ffmpeg -i untitled.mov -ss 00:00:01 -t 2.0 -vf "scale=1280:-2" -c:v libx264 -crf 28 -preset veryfast -an hero-desert-sml.mp4
+
+Flag / Meaning
+ffmpeg = Starts the FFmpeg tool
+-i untitled.mov = Input file: untitled.mov
+-ss 00:00:01 = Seek to 1 second into the video before processing (start position)
+-t 2.0 = Output duration: 2 seconds
+-vf "scale=1280:-2" = scale width to 1280px and auto-adjust height to preserve aspect ratio
+-c:v libx264 = Use H.264 codec (via libx264) for encoding video
+-crf 28 = Constant Rate Factor: quality/compression level (lower = better quality)
+-preset veryfast = Encoding speed/efficiency tradeoff (faster = larger file)
+-an = Strip audio from the output file
+hero-desert-sml.mp4 = Output file name
