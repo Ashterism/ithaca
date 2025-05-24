@@ -395,10 +395,3 @@ footer {
     box-shadow: none;
   }
 }
-
-.hero-content h1,
-.hero-content p {
-  text-shadow:
-    0 2px 8px rgba(0,0,0,0.18), // existing black shadow for contrast
-    0 2px 16px rgba($color-orange, 0.18); // subtle orange glow
-}

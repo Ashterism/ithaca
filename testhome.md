@@ -12,7 +12,6 @@ permalink: /testhome/
 TRY: Area Extended force caps
 WITH:                         */
 .alter-sect-title {
-  font-family: font-family: "Arial Extended", Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -21,16 +20,15 @@ WITH:                         */
     /* H offset, V offset, blur radius, (colour, opacity) */
     0 4px 12px rgba(254, 148, 0, 0.9);
 }
-
 </style>
 
 <section id="hero" class="section-hero">
   <div class="hero-video-wrapper">
     <video autoplay loop muted playsinline class="hero-video">
-      <source src="/assets/videos/hero-river-sml.mp4" type="video/mp4">
+      <source src="/assets/videos/hero-river-sml.mp4?v=1" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="hero-content alter-sect-title alter-hero-shadow">
+    <div class="hero-content alter-sect-title">
       <h1>From Strategy to Impact</h1>
       <p>Practical sustainability and digital delivery for organisations that care about making things work.</p>
     </div>
