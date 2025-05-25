@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Strategy to Impact
-description: Practical sustainability and digital strategy, delivered with clarity and purpose.
+description: Practical sustainability and digital delivery for organisations that value clarity and impact.
 ---
 
 <section id="hero" class="section-hero">
   <div class="hero-video-wrapper">
-    <video autoplay loop muted playsinline class="hero-video">
+    <video autoplay loop muted playsinline preload="auto" class="hero-video">
       <source src="/assets/videos/hero-desert-sml.mp4?v=1" type="video/mp4">
       Your browser does not support the video tag.
     </video>
