@@ -5,7 +5,6 @@
 @import 'variables';
 @import 'navigation';
 
-
 /* -------------------------------------------------- */
 /* Base Styles & Typography */
 /* -------------------------------------------------- */
@@ -33,6 +32,10 @@ ul li {
   margin-bottom: 0.75rem;
 }
 
+ul {
+  padding-left: 1.2rem;
+}
+
 // Spacing Utilities 
 
 .gap-xxs {
@@ -55,9 +58,15 @@ ul li {
 /* Layout Containers */
 /* -------------------------------------------------- */
 section {
-  padding: 2rem 2rem;
+  padding: 2rem 2rem; //
   max-width: $site-width;
   margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: $padding-mobile;
+  }
 }
 
 section.highlighted {
@@ -69,42 +78,6 @@ section.block {
   padding: 4rem 2rem;
   max-width: $site-width;
   margin: 0 auto;
-}
-
-
-/* -------------------------------------------------- */
-/* Utilities */
-/* -------------------------------------------------- */
-
-/* Alignment utilities */
-.img-left {
-  float: left;
-  margin-right: 1.5rem;
-}
-
-.img-right {
-  float: right;
-  margin-left: 1.5rem;
-}
-
-.img-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Block-level image utility */
-.img-block {
-  display: block;
-  max-width: 100%;
-  width: auto;
-  clear: both;
-  margin: 2rem 0;
-}
-
-/* Optional hairline border */
-.img-bordered {
-  border: 1px solid $color-orange;
 }
 
 
@@ -124,6 +97,7 @@ section.block {
 /* Image Utilities */
 /* -------------------------------------------------- */
 
+// Size utilities
 img.content-img {
   max-width: 100%;
   height: auto;
@@ -140,6 +114,44 @@ img.content-img {
   &.img-large {
     max-width: 800px;
   }
+}
+
+/* Alignment utilities */
+.img-left {
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.img-right {
+  float: right;
+  margin-left: 1.5rem;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .img-focal-dwn-sml {
+    object-fit: cover;
+    object-position: center -80px;
+  }
+}
+
+/* Block-level image utility */
+.img-block {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  clear: both;
+  margin: 2rem 0;
+}
+
+/* hairline border */
+.img-bordered {
+  border: 1px solid $color-orange;
 }
 
 /* -------------------------------------------------- */
@@ -212,7 +224,7 @@ footer {
 
   .footer-right {
     text-align: right;
-    font-size: 0.98rem;
+    font-size: 0.85rem;
     line-height: 1.5;
     opacity: 0.85;
     min-width: 210px;
@@ -224,15 +236,17 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $breakpoint-mobile) {
   footer .footer-wrapper {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     padding: 0 1rem;
   }
-  footer .footer-right {
-    text-align: left;
+
+  .footer-right {
+    font-size: 0.7rem;
+    text-align: right;
     min-width: 0;
   }
 }
@@ -345,9 +359,6 @@ footer {
 /* Section Flex Layout */
 /* -------------------------------------------------- */
 
-// No media queries at this level as affects different types 
-// of sections.
-
 .section-flex {
   display: flex;
   flex-wrap: nowrap;
@@ -368,6 +379,7 @@ footer {
   width: 100%;
   text-align: center; 
 }
+
 
 /* -------------------------------------------------- */
 /* Section Split Layouts */
@@ -394,10 +406,18 @@ footer {
   text-align: right;
 }
 
+.section-split .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: $breakpoint-mobile) {
   .section-split .section-flex {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .section-split .image {
@@ -405,8 +425,31 @@ footer {
     text-align: center;
   }
 
+  .section-split .image img {
+    height: auto;
+    width: auto;
+    max-width: none;
+    max-height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
   .section-split .text {
     text-align: left; // optional, for readability
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .section-split .image img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -414,8 +457,9 @@ footer {
 /* Services Section */
 /* -------------------------------------------------- */
 .section-services {
-  padding: 2rem 2rem; 
-  
+  padding-top: 2rem;
+  padding-bottom: 2rem; 
+
   .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -476,6 +520,10 @@ footer {
     
     .service-card {
       padding: 1.5rem;
+    }
+
+      .section-title {
+        padding-left: 0.5rem;
     }
   }
 }
@@ -558,109 +606,50 @@ footer {
 
 
 /* -------------------------------------------------- */
-/* Contact Section */
+/* Contact Form Styling */
 /* -------------------------------------------------- */
-.section-contact {
-  padding: 2rem 2rem;
 
-  .section-wrapper {
-    max-width: $site-width;
-    margin: 0 auto;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    font-weight: 500;
   }
 
-  .section-title {
-    text-align: left;
-    margin-bottom: 0.1rem;
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    font-size: 1rem;
   }
 
-  .section-flex {
-    display: flex;
-    gap: 3rem;
-    align-items: flex-start;
+  textarea {
+    min-height: 150px;
+    resize: vertical;
   }
 
-  .contact-content {
-    flex: 1 1 60%;
-    
-    p {
-      margin-bottom: 2rem;
-    }
-  }
+  button {
+    align-self: flex-start;
+    padding: 0.75rem 2rem;
+    background: $color-orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
 
-  .contact-image {
-    flex: 1 1 40%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    label {
-      font-weight: 500;
-    }
-
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-
-    textarea {
-      min-height: 150px;
-      resize: vertical;
-    }
-
-    button {
-      align-self: flex-start;
-      padding: 0.75rem 2rem;
-      background: $color-orange;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.2s;
-
-      &:hover {
-        background: darken($color-orange, 10%);
-      }
+    &:hover {
+      background: darken($color-orange, 10%);
     }
   }
 
-  @media (max-width: $breakpoint-tablet) {
-    .section-flex {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    
-    .contact-image {
-      order: -1;
-      width: 100%;
-      
-      img {
-        max-width: 300px;
-        margin: 0 auto;
-      }
-    }
-  }
-}
-
-@media (max-width: $breakpoint-mobile) {
-  .section-contact {
-    padding: 2rem 1rem;
+  @media (max-width: $breakpoint-mobile) {
+    padding-right: $padding-mobile;
   }
 }
 
