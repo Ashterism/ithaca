@@ -5,6 +5,7 @@ description: Practical sustainability and digital strategy, delivered with clari
 permalink: /testhome/
 ---
 
+
 <section id="hero" class="section-hero">
   <div class="hero-video-wrapper">
     <video autoplay loop muted playsinline class="hero-video">

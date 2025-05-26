@@ -1,4 +1,7 @@
-// _navigation.scss
+@import 'variables';
+
+
+// This nav is based on minima's and then adapted.
 
 /* --- Variables --- */
 // These variables are specific to the mobile navigation styling.
@@ -46,13 +49,22 @@ header {
   .nav-logo {
     height: 64px;
     border-radius: 8px;
+    transition: height 0.3s ease;
+
+    @media (max-width: $breakpoint-tablet) {
+      height: 52px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      height: 45px;
+    }
   }
 }
 
 /* -------------------------------------------------- */
 /* Desktop Navigation */
 /* -------------------------------------------------- */
-@media (min-width: 801px) {
+@media (min-width: $breakpoint-tablet + 1) {
   .sticky-nav .nav-items {
     display: flex;
     gap: calc($spacing-unit * 2);
@@ -64,6 +76,8 @@ header {
   .sticky-nav .nav-items li {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
+    line-height: 1;
   }
   .sticky-nav .nav-item {
     text-decoration: none;
@@ -75,6 +89,9 @@ header {
     height: 100%;
     padding: 0.5rem 0;
   }
+  .sticky-nav .nav-item:hover {
+    color: $color-orange;
+  }
   /* Hide mobile nav elements on desktop */
   .nav-trigger,
   label[for="nav-trigger"],
@@ -84,28 +101,23 @@ header {
 }
 
 /* -------------------------------------------------- */
-/* Mobile Navigation */
+/* Tablet and mobile Navigation */
 /* -------------------------------------------------- */
-@media (max-width: 800px) {
-  .sticky-nav .nav-wrapper {
-    // padding-right: calc($spacing-unit * 0.6); // Already handled by .mobile-nav-group positioning
-    // position: relative; // Already on parent .sticky-nav .nav-wrapper
-  }
-
+@media (max-width: $breakpoint-tablet) {
   // Desktop navigation links are hidden on mobile
   .sticky-nav .nav-items { // This targets the desktop nav-items and hides them
     display: none;
   }
 
-  // Mobile Nav Group (Minima's equivalent of .site-nav on mobile)
+  // Mobile Nav Group 
   // This is the actual "card" that contains the icon AND the links
   .mobile-nav-group {
     display: block; // Show the container on mobile
     position: absolute;
-    top: 9px; // Minima's exact top positioning relative to nav-wrapper
-    right: calc($spacing-unit * 0.6); // Minima's exact right positioning
+    top: calc($padding-mobile + 2px);
+    right: $padding-mobile;
     text-align: right; // Aligns content within the card to the right
-
+  
     // Initial state: collapsed to icon size, no background/border/shadow
     width: 36px; // Match icon width
     height: 36px; // Match icon height
@@ -212,6 +224,7 @@ header {
   }
 
   .mobile-nav-group .nav-item:hover {
+    color: $color-orange;
     background-color: #f0f0f0;
   }
 }
