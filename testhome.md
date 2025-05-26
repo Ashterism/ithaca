@@ -91,7 +91,7 @@ WITH:                         */
     <div class="section-flex">
       <div class="text">
         <p>We've worked across a wide range of sectors, enabling us to bring fresh perspectives, cross-polinating ideas, and applying proven approaches in new contexts.</p>
-        <p>Sectors include: Digital, Sustainabilitym, Major events, Public transport, Government, Airlines, Energy, Finance, Charity, Healthcare, and Urban Planning.  We've worked for/with:</p>
+        <p>Sectors include: Digital, Sustainability, Major events, Public transport, Government, Airlines, Energy, Finance, Charity, Healthcare, and Urban Planning.  We've worked for/with:</p>
         <div class="brand-logo-scroll">
           <div class="scroll-track">
             <!-- First set of logos -->
@@ -135,7 +135,7 @@ WITH:                         */
       <div class="section-flex">
         <div class="text">
           <h3>Our Philosophy</h3>
-          <p>We believe that sustainability should be practical and progress-focused — not just a reporting exercise. And that digital can create real, meaningful connections that extend beyond online. We bring strategy, systems thinking, and human insight together to deliver change that sticks.</p>
+          <p>We believe that by bringing strategy, systems thinking, and human insight together it is possible to deliver meaningful change that sticks.  We believe that sustainability should be practical and progress-focused — not just a reporting exercise. And that digital can create real, meaningful connections that extend beyond online. </p>
           <div class="gap-md"></div>
           <h3>Demonstrable Delivery</h3>
           <ul>
@@ -147,7 +147,7 @@ WITH:                         */
           </ul>
         </div>
       <div class="image">
-        <img src="/assets/images/whyithaca.png" alt="Why Ithaca visual" class="content-img img-medium img-bordered img-focal-dwn-sml">
+        <img src="/assets/images/whyithaca.png?v=2" alt="Why Ithaca visual" class="content-img img-medium img-bordered img-focal-dwn-sml">
     </div>
   </div>
 </section>
