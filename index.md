@@ -4,19 +4,20 @@ title: Strategy to Impact
 description: Practical sustainability and digital delivery for organisations that value clarity and impact.
 ---
 
-<section id="hero" class="section-hero">
-  <div class="hero-video-wrapper">
-    <video autoplay loop muted playsinline preload="auto" class="hero-video">
-      <source src="/assets/videos/hero-desert-sml.mp4?v=1" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-content text-uppercase">
+<div class="hero-video-wrapper">
+  <video autoplay loop muted playsinline preload="auto" class="hero-video">
+    <source src="/assets/videos/hero-desert-sml.mp4?v=1" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-content">
+    <div class="hero-inner text-uppercase">
       <h1>From Strategy to Impact</h1>
       <p>Practical sustainability and digital delivery for organisations that value clarity and impact.</p>
     </div>
   </div>
-</section>
+</div>
 
+<main class="site-content">
 <section id="about" class="section">
     <div class="section-title">
       <h2>About Ithaca</h2>
@@ -170,3 +171,4 @@ description: Practical sustainability and digital delivery for organisations tha
     </div>
   </div>
 </section>
+</main>
