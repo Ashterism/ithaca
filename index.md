@@ -80,11 +80,11 @@ description: Practical sustainability and digital delivery for organisations tha
             <div class="logo-group">
               <img src="/assets/images/xplogos/xpLogo_arriva.jpg" alt="Arriva" />
               <img src="/assets/images/xplogos/xpLogo_BarclaysWealth.png" alt="Barclays Wealth" />
-              <img src="/assets/images/xplogos/xpLogo_cop28_2.webp" alt="COP28 UAE" />
+              <img src="/assets/images/xplogos/xplogo_cop28_2.webp" alt="COP28 UAE" />
               <img src="/assets/images/xplogos/xplogo_dnata.png" alt="dNata" />
               <img src="/assets/images/xplogos/xpLogo_EDF.png" alt="EDF Energy" />
               <img src="/assets/images/xplogos/xpLogo_Emirates.png" alt="Emirates" />
-              <img src="/assets/images/xplogos/xpLogo_fcdo2.png?v=2" alt="FCDO" />
+              <img src="/assets/images/xplogos/xplogo_fcdo2.png" alt="FCDO" />
               <img src="/assets/images/xplogos/xpLogo_GES.jpeg" alt="GES" />
               <img src="/assets/images/xplogos/xpLogo_Go_Ahead_logo.png" alt="Go-Ahead Group" />
               <img src="/assets/images/xplogos/xpLogo_mitsubishi.png" alt="Mitsubishi" />
@@ -94,11 +94,11 @@ description: Practical sustainability and digital delivery for organisations tha
             <div class="logo-group">
               <img src="/assets/images/xplogos/xpLogo_arriva.jpg" alt="Arriva" />
               <img src="/assets/images/xplogos/xpLogo_BarclaysWealth.png" alt="Barclays Wealth" />
-              <img src="/assets/images/xplogos/xpLogo_cop28_2.webp" alt="COP28 UAE" />
+              <img src="/assets/images/xplogos/xplogo_cop28_2.webp" alt="COP28 UAE" />
               <img src="/assets/images/xplogos/xplogo_dnata.png" alt="dNata" />
               <img src="/assets/images/xplogos/xpLogo_EDF.png" alt="EDF Energy" />
               <img src="/assets/images/xplogos/xpLogo_Emirates.png" alt="Emirates" />
-              <img src="/assets/images/xplogos/xpLogo_fcdo2.png" alt="FCDO" />
+              <img src="/assets/images/xplogos/xplogo_fcdo2.png" alt="FCDO" />
               <img src="/assets/images/xplogos/xpLogo_GES.jpeg" alt="GES" />
               <img src="/assets/images/xplogos/goahead2.png" alt="Go-Ahead Group" />
               <img src="/assets/images/xplogos/xpLogo_mitsubishi.png" alt="Mitsubishi" />
