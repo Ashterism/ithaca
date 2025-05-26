@@ -31,7 +31,7 @@ description: Practical sustainability and digital delivery for organisations tha
   </div>
 </section>
 
-<section id="services" class="section-split-right highlighted">
+<section id="services" class="section-split highlighted">
   <div class="section-title">
     <h2>What We Offer</h2>
   </div>
@@ -65,7 +65,7 @@ description: Practical sustainability and digital delivery for organisations tha
   </div>
 </section>
 
-<section id="event-expertise" class="section-split-right with-background">
+<section id="event-expertise" class="section-split with-background">
   <div class="section-title">
     <h2>Event Expertise</h2>
   </div>
@@ -76,7 +76,7 @@ description: Practical sustainability and digital delivery for organisations tha
   </div>
 </section>
 
-<section id="why" class="section-split-right highlighted">
+<section id="why" class="section-split highlighted">
   <div class="section-title">
      <h2>Why Ithaca?</h2>
   </div>
@@ -99,8 +99,7 @@ description: Practical sustainability and digital delivery for organisations tha
   </div>
 </section>
 
-<section id="how" class="section-split-left">
-  <div class="section-flex">
+<section id="how" class="section">
   <div class="section-title">
       <h2>How We Work</h2>
   </div>
@@ -111,7 +110,6 @@ description: Practical sustainability and digital delivery for organisations tha
         <li>We draw from multiple disciplines, sectors, and systems. That breadth gives us insight others can miss.</li>
       </ul>
     </div>
-  </div>
 </section>
 
 <section id="contact" class="section-contact highlighted">

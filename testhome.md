@@ -87,7 +87,7 @@ WITH:                         */
   </div>
 </section>
 
-<section id="experience" class="section-split-right with-background">
+<section id="experience" class="section-split with-background">
   <div class="section-title">
     <h2>Experience</h2>
   </div>
@@ -121,7 +121,7 @@ WITH:                         */
       <img src="/assets/images/xplogos/xpLogo_Emirates.png" alt="Emirates" />
       <img src="/assets/images/xplogos/xpLogo_FCDO2.png" alt="FCDO" />
       <img src="/assets/images/xplogos/xpLogo_GES.jpeg" alt="GES" />
-      <img src="/assets/images/xplogos/xpLogo_Go_Ahead_logo.png" alt="Go-Ahead Group" />
+      <img src="/assets/images/xplogos/goahead2.png" alt="Go-Ahead Group" />
       <img src="/assets/images/xplogos/xpLogo_mitsubishi.png" alt="Mitsubishi" />
       <img src="/assets/images/xplogos/xpLogo_UNFCCC.png" alt="UNFCCC" />
     </div>
@@ -131,7 +131,7 @@ WITH:                         */
   </div>
 </section>
 
-<section id="why" class="section-split-right highlighted">
+<section id="why" class="section-split highlighted">
   <div class="section-title">
      <h2>Why Ithaca?</h2>
   </div>
@@ -139,6 +139,7 @@ WITH:                         */
     <div class="text">
       <h3>Our Philosophy</h3>
       <p>We believe that sustainability should be practical and progress-focused — not just a reporting exercise. And that digital can create real, meaningful connections that extend beyond online. We bring strategy, systems thinking, and human insight together to deliver change that sticks.</p>
+      <div class="gap-md"></div>
       <h3>Demonstrable Delivery</h3>
       <ul>
         <li>End-to-end sustainability engagement, strategy and implementation for an 85,000-person global event in the UAE</li>
@@ -154,8 +155,7 @@ WITH:                         */
   </div>
 </section>
 
-<section id="how" class="section-split-left">
-  <div class="section-flex">
+<section id="how" class="section">
   <div class="section-title">
       <h2>How We Work</h2>
   </div>
@@ -166,7 +166,6 @@ WITH:                         */
         <li>We draw from multiple disciplines, sectors, and systems. That breadth gives us insight others can miss.</li>
       </ul>
     </div>
-  </div>
 </section>
 
 <section id="contact" class="section-contact highlighted">
