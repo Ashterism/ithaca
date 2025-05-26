@@ -5,30 +5,13 @@ description: Practical sustainability and digital strategy, delivered with clari
 permalink: /testhome/
 ---
 
-<style>
-/* TESTING STUFF */
-
-/* Section Title formatting 
-TRY: Area Extended force caps
-WITH:                         */
-.alter-sect-title {
-  text-transform: uppercase;
-}
-
-.alter-hero-shadow {
-  text-shadow:
-    /* H offset, V offset, blur radius, (colour, opacity) */
-    0 4px 12px rgba(254, 148, 0, 0.9);
-}
-</style>
-
 <section id="hero" class="section-hero">
   <div class="hero-video-wrapper">
     <video autoplay loop muted playsinline class="hero-video">
       <source src="/assets/videos/hero-river-sml.mp4?v=1" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="hero-content alter-sect-title">
+    <div class="hero-content text-uppercase">
       <h1>From Strategy to Impact</h1>
       <p>Practical sustainability and digital delivery for organisations that value clarity and impact.</p>
     </div>
