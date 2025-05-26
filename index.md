@@ -12,7 +12,7 @@ description: Practical sustainability and digital delivery for organisations tha
     </video>
     <div class="hero-content">
       <h1>From Strategy to Impact</h1>
-      <p>Practical sustainability and digital delivery for organisations that care about making things work.</p>
+      <p>Practical sustainability and digital delivery for organisations that value clarity and impact.</p>
     </div>
   </div>
 </section>
