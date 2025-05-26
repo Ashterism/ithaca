@@ -85,7 +85,7 @@ WITH:                         */
 </section>
 
 <section id="experience" class="section with-background">
-    <div class="section-title">
+  <div class="section-title">
       <h2>Experience</h2>
     </div>
     <div class="section-flex">
@@ -124,7 +124,8 @@ WITH:                         */
             </div>
           </div>
         </div>
-      </div>
+    </div>
+  </div> 
 </section>
 
 <section id="why" class="section-split highlighted">
