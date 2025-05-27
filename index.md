@@ -11,7 +11,7 @@ description: Practical sustainability and digital delivery for organisations tha
   </video>
   <div class="hero-content">
     <div class="hero-inner text-uppercase">
-      <h1>From Strategy to Impact</h1>git 
+      <h1>From Strategy to Impact</h1>
       <p>Practical sustainability and digital delivery for organisations that value clarity and impact.</p>
     </div>
   </div>
