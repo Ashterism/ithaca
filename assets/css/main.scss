@@ -328,9 +328,10 @@ footer {
     margin-bottom: 1rem;
     color: inherit;
     text-shadow:
-      0 2px 8px rgba(0,0,0,0.25),
-      0 2px 16px rgba(255,153,0,0.18);
-    -webkit-text-stroke: 0.9px $color-orange-dark;
+      0 2px 8px rgba($color-orange-dark,0.25),
+      0 2px 16px rgba($color-orange,0.18),
+      0 2px 24px rgba($color-dark,0.15);
+    -webkit-text-stroke: 0.95px $color-dark;
     paint-order: stroke fill;
   }
 
@@ -339,9 +340,10 @@ footer {
     font-weight: 500;
     color: inherit;
     text-shadow:
-      0 2px 8px rgba(0,0,0,0.18),
-      0 2px 16px rgba(255,153,0,0.18);
-    -webkit-text-stroke: 0.7px $color-orange-dark;
+      0 2px 8px rgba($color-orange-dark,0.25),
+      0 2px 16px rgba($color-orange,0.18),
+      0 2px 24px rgba($color-dark,0.15);
+    -webkit-text-stroke: 0.95px $color-dark;
     paint-order: stroke fill;
   }
 }
@@ -679,7 +681,7 @@ footer {
     cursor: pointer;
     transition: background 0.2s;
 
-    -webkit-text-stroke: 0.9px $color-orange-dark; // or even #000 for max contrast
+    -webkit-text-stroke: 0.75px $color-dark; // or even #000 for max contrast
     paint-order: stroke fill;
 
     &:hover {
