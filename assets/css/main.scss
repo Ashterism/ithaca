@@ -304,6 +304,23 @@ footer {
   padding: 0 2rem;
   box-sizing: border-box;
 
+
+  // Overlay for better contrast
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1); // overlay for better contrast
+    z-index: 1;
+  }
+
+  // Ensure all direct child elements appear above the overlay
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+  // Overlay end
+
   h1 {
     font-size: 2.6rem;
     font-weight: 600;
@@ -313,7 +330,7 @@ footer {
     text-shadow:
       0 2px 8px rgba(0,0,0,0.25),
       0 2px 16px rgba(255,153,0,0.18);
-    -webkit-text-stroke: 0.5px $color-dark;
+    -webkit-text-stroke: 0.7px $color-orange-dark;
     paint-order: stroke fill;
   }
 
@@ -324,7 +341,7 @@ footer {
     text-shadow:
       0 2px 8px rgba(0,0,0,0.18),
       0 2px 16px rgba(255,153,0,0.18);
-    -webkit-text-stroke: 0.5px $color-dark;
+    -webkit-text-stroke: 0.7px $color-orange-dark;
     paint-order: stroke fill;
   }
 }
@@ -661,6 +678,9 @@ footer {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.2s;
+
+    -webkit-text-stroke: 0.75px $color-orange-dark; // or even #000 for max contrast
+    paint-order: stroke fill;
 
     &:hover {
       background: darken($color-orange, 10%);
