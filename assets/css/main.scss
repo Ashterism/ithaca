@@ -330,7 +330,7 @@ footer {
     text-shadow:
       0 2px 8px rgba(0,0,0,0.25),
       0 2px 16px rgba(255,153,0,0.18);
-    -webkit-text-stroke: 0.7px $color-orange-dark;
+    -webkit-text-stroke: 0.9px $color-orange-dark;
     paint-order: stroke fill;
   }
 
@@ -679,7 +679,7 @@ footer {
     cursor: pointer;
     transition: background 0.2s;
 
-    -webkit-text-stroke: 0.75px $color-orange-dark; // or even #000 for max contrast
+    -webkit-text-stroke: 0.9px $color-orange-dark; // or even #000 for max contrast
     paint-order: stroke fill;
 
     &:hover {
